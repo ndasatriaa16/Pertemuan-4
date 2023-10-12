@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+
+class percabangan {
+    public static void main(String[] args) {
+
+        Scanner Input = new Scanner (System.in);
+        System.out.println("LUAS BANGUN DATAR");
+
+        // Persegi
+        System.out.println("Persegi");
+        System.out.print("Sisi :");
+        int sisi = Input.nextInt();
+        int luas = sisi*sisi;
+        System.out.println("Luas :" + luas);
+
+        // Segitiga
+        System.out.println("Segitiga");
+        System.out.print("alas :");
+        double alas = Input.nextDouble();
+        System.out.print("tinggi :");
+        double tinggi = Input.nextDouble();
+        double luasS = (0.5*alas)*tinggi;
+        System.out.println("Luas :" + luasS);
+
+        // Lingkaran
+        System.out.println("Lingkaran");
+        System.out.print("Jari jari :");
+        double jari2 = Input.nextDouble();
+        double luasL = 3.14*(jari2*jari2);
+        System.out.println("Luas :" + luasL);
+
+        
+
+
+        
+
+
+    }
+}
