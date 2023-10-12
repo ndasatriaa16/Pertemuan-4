@@ -1,0 +1,109 @@
+import java.util.Scanner;
+
+class grade {
+    public static void main(String[] args) {
+        
+
+        Scanner Input = new Scanner(System.in);
+        System.out.println("===DATA NILAI MAHASISWA===");
+
+        // Nama
+        System.out.print("Nama :" );
+        String nama =Input.nextLine();
+        
+
+        // Nim
+        System.out.print("Nim :");
+        int nim = Input.nextInt();
+        
+
+        // Tugas
+        System.out.print("Nilai Tugas :");
+        int tgs = Input.nextInt();
+
+        if (tgs>=80) {
+            System.out.println("Grade Nilai : A");
+        }
+
+        else if(tgs>=70&&tgs<80) {
+            System.out.println("Grade Nilai : B");
+        }
+
+          else if(tgs>=60&&tgs<70) {
+            System.out.println("Grade Nilai : C");
+        }
+
+         else if(tgs>=50&&tgs<60) {
+            System.out.println("Grade Nilai : D");
+        }
+
+         else if(tgs<50) {
+            System.out.println("Grade Nilai : E");
+        }
+
+
+
+        
+
+        // UTS
+        System.out.print("Nilai UTS :" );
+        int uts = Input.nextInt();
+
+          if (tgs>=80) {
+            System.out.println("Grade Nilai : A");
+        }
+
+        else if(tgs>=70&&tgs<80) {
+            System.out.println("Grade Nilai : B");
+        }
+
+          else if(tgs>=60&&tgs<70) {
+            System.out.println("Grade Nilai : C");
+        }
+
+         else if(tgs>=50&&tgs<60) {
+            System.out.println("Grade Nilai : D");
+        }
+
+         else if(tgs<50) {
+            System.out.println("Grade Nilai : E");
+        }
+
+        
+        // UAS
+        System.out.print("Nilai UAS :");
+        int uas = Input.nextInt();
+        
+          if (tgs>=80) {
+            System.out.println("Grade Nilai : A");
+        }
+
+        else if(tgs>=70&&tgs<80) {
+            System.out.println("Grade Nilai : B");
+        }
+
+          else if(tgs>=60&&tgs<70) {
+            System.out.println("Grade Nilai : C");
+        }
+
+         else if(tgs>=50&&tgs<60) {
+            System.out.println("Grade Nilai : D");
+        }
+
+         else if(tgs<50) {
+            System.out.println("Grade Nilai : E");
+        }
+
+
+        // Nilai Akhir
+        double akh = tgs*0.4 + uas*0.3 + uts*0.3;
+        System.out.println("Nilai Akhir :" + akh);
+
+        if (tgs>=60) {
+            System.out.println("SELAMAT ANDA DINYATAKAN LULUS");
+        }
+        else if (tgs<60) {
+            System.out.println("ANDA TIDAK LULUS");
+        }
+    }
+}
